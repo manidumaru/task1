@@ -1,0 +1,56 @@
+
+.hero-section {
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4F6F5;
+    border-radius: 60px;
+    height: 784px;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+
+.hero-image {
+    display: flex;
+    align-items: end;
+}
+
+.hero-image > img {
+    height: 90%;
+}
+
+.hero-text {
+    font-size: 96px;
+    line-height: 1.2;
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.hero-text-background {
+    background-color: white;
+    transform: skewY(-2deg);
+}
+
+.hero-text-background-yellow {
+    background-color: #E6C744;
+    transform: skewY(-2deg);
+}
+
+.hero-tagline {
+    font-size: 30px;
+}
+
+.hero-btn {
+    border: none;
+    background-color: black;
+    color:white;
+    font-size: 24px;
+    border-radius: 7px;
+    padding: 20px 30px;
+    cursor: pointer;
+}

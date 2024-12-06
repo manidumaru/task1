@@ -255,6 +255,10 @@ a {
   justify-content: space-between;
 }
 
+.youngs-favourite-image {
+  min-width: 80%;  
+}
+
 .youngs-favourite-card-content {
   display: flex;
   justify-content: space-between;
@@ -295,7 +299,7 @@ a {
 /* ---------------------------------- Community CSS ---------------------------------- */
 
 .community-section {
-  margin: 100px 0px;
+  margin: 100px 0px 0px 0px;
   background-color: #E5C643;
   height: 560px;
   display: flex;
@@ -343,3 +347,64 @@ a {
 }
 
 /* ---------------------------------- Footer CSS ---------------------------------- */
+
+footer {
+  background-color: #000;
+  color: #C2C8DA;
+  display: flex;
+  height: 545px;
+}
+
+.footer-social-media {
+  flex: 40%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 20px;
+}
+
+.footer-title {
+  color:white;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.footer-description {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footer-links {
+  flex: 60%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  padding-top: 150px;
+  font-size: 20px;
+}
+
+.footer-links-child {
+  flex: 33%;
+}
+
+.footer-links-title {
+  color:white;
+}
+
+.footer-links-child > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.footer-links-child > ul > li {
+  margin: 0;
+}

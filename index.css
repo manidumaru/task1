@@ -11,3 +11,335 @@
 .margined-section {
     margin: 20px 100px;
 }
+
+/* ---------------------------------- Navigation CSS ---------------------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px;    
+  box-sizing: border-box;    
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.task-name {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.logo > img {
+  height: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list > li {
+  padding: 0px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.signup-btn {
+  border-radius: 7px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; 
+}
+
+/* ---------------------------------- Hero CSS ---------------------------------- */
+
+
+.hero-section {
+  margin: 10px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #F4F6F5;
+  border-radius: 60px;
+  height: 784px;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+}
+
+.hero-image {
+  display: flex;
+  align-items: end;
+}
+
+.hero-image > img {
+  height: 90%;
+}
+
+.hero-text {
+  font-size: 96px;
+  line-height: 1.2;
+  font-weight: 900;
+  padding-left: 15px;
+}
+
+.hero-text-background {
+  background-color: white;
+  transform: skewY(-2deg);
+}
+
+.hero-text-background-yellow {
+  background-color: #E6C744;
+  transform: skewY(-2deg);
+}
+
+.hero-tagline {
+  font-size: 30px;
+}
+
+.hero-btn {
+  border: none;
+  display: flex;
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+/* ---------------------------------- Brands CSS ---------------------------------- */
+
+
+
+.brand-section {
+  background-color: #E6C744;
+  margin: 50px 0px;
+  width: 100%;
+  height: 130px;
+}
+
+.brand-parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.brand-parent > .brand-logos {
+  height: 50%;
+  mix-blend-mode: multiply;
+}
+
+
+/* ---------------------------------- New Arrivals CSS ---------------------------------- */
+
+.new-arrival-heading {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.new-arrival-cards-parent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.new-arrival-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-arrival-card > img {
+  width: 484px;
+}
+
+.new-arrival-card-description {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrival-card-description-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ---------------------------------- PayDay CSS ---------------------------------- */
+
+.payday-section {
+  margin: 150px 0px;
+  height: 768px;
+  background-color: #EFD24B;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.payday-image {
+  height: 80%;
+}
+
+.payday-description {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+}
+
+.payday-description-header {
+  font-size: 96px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.payday-description-title {
+  padding-left: 10px;
+}
+
+
+.payday-description-background {
+  background-color: white;
+  transform: skewY(-2deg);
+}
+
+.payday-description-info {
+  font-size: 24px;
+}
+
+.payday-bold-date {
+  font-weight: bolder;
+}
+
+.payday-btn {
+  border: none;
+  background-color: black;
+  color: white;
+  width: 30%;
+  border-radius: 7px;
+  padding: 20px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ---------------------------------- Favourite CSS ---------------------------------- */
+
+.youngs-favourite-card {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.youngs-favourite-card-parent {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.youngs-favourite-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.youngs-favourite-card-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ---------------------------------- Download CSS ---------------------------------- */
+
+.download-section {
+  display: flex;
+  justify-content: space-around;
+  height: 768px;
+}
+
+.download-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.download-section-title {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.download-section-description {
+  font-size: 18px;
+
+}
+
+/* ---------------------------------- Community CSS ---------------------------------- */
+
+.community-section {
+  margin: 100px 0px;
+  background-color: #E5C643;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+
+.community-section-title {
+  font-size: 44px;
+  text-align: center;
+}
+
+.community-section-description {
+  font-size: 24px;
+}
+
+.community-input-parent {
+  position: relative;       
+}
+
+.community-section-email-input {
+  border: none;
+  height: 50px;
+  width: 450px;
+  padding: 0px 20px;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+.community-input-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ---------------------------------- Footer CSS ---------------------------------- */

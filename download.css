@@ -1,0 +1,22 @@
+.download-section {
+    display: flex;
+    justify-content: space-around;
+    height: 768px;
+}
+
+.download-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-section-title {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.download-section-description {
+    font-size: 18px;
+
+}

@@ -9,7 +9,19 @@
 }
 
 .margined-section {
-    margin: 20px 100px;
+  margin: 20px 100px;
+}
+
+@media screen and (max-width: 860px) {
+  .margined-section {
+    margin: 15px 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .margined-section {
+    margin: 7px 20px;
+  }
 }
 
 /* ---------------------------------- Navigation CSS ---------------------------------- */
@@ -17,8 +29,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px 100px;    
-  box-sizing: border-box;    
+  align-items: center;
+  margin: 20px 100px;
 }
 
 .logo {
@@ -59,17 +71,71 @@ a {
   background-color: black;
   border: none;
   padding: 10px 20px;
-  cursor: pointer; 
+  cursor: pointer;
+}
+
+.nav-breadcrumb {
+  display: none;
+}
+
+@media screen and (max-width: 1120px) {
+  .logo {
+    gap: 4px;
+  }
+
+  .task-name {
+    font-weight: 800;
+    font-size: 22px;
+  }
+
+  .logo > img {
+    height: 18px;
+  }
+
+  .nav-list > li {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  nav {
+    margin: 10px 50px;
+  }
+
+  .logo {
+    gap: 6px;
+  }
+
+  .task-name {
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  .logo > img {
+    height: 20px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-breadcrumb {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    margin: 7px 45px;
+  }
 }
 
 /* ---------------------------------- Hero CSS ---------------------------------- */
 
-
-.hero-section {
-  margin: 10px 100px;
+.hero-section {  
   display: flex;
   justify-content: space-evenly;
-  background-color: #F4F6F5;
+  background-color: #f4f6f5;
   border-radius: 60px;
   height: 784px;
 }
@@ -103,34 +169,127 @@ a {
 }
 
 .hero-text-background-yellow {
-  background-color: #E6C744;
+  background-color: #e6c744;
   transform: skewY(-2deg);
 }
 
 .hero-tagline {
-  font-size: 30px;
+  font-size: 25px;
+  margin: 20px 0px;
 }
 
 .hero-btn {
   border: none;
   display: flex;
   background-color: black;
-  color:white;
+  color: white;
   font-size: 20px;
   border-radius: 7px;
   padding: 15px 25px;
   cursor: pointer;
 }
 
+@media screen and (max-width: 1500px) {
+  .hero-section {
+    height: 500px;
+  }
+  .hero-text {
+    font-size: 56px;
+    font-weight: 900;
+    padding-left: 10px;
+  }
+
+  .hero-description {
+    align-items: start;
+    padding-left: 40px;
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero-section {
+    height: 400px;
+  }
+  .hero-text {
+    font-size: 40px;
+    font-weight: 900;
+    padding-left: 7px;
+  }
+
+  .hero-description {
+    align-items: start;
+    padding-left: 30px;
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .hero-section {
+    height: 300px;
+  }
+  .hero-text {
+    font-size: 26px;
+    font-weight: 900;
+    padding-left: 7px;
+  }
+
+  .hero-description {
+    padding-left: 20px;
+  }
+
+  .hero-tagline {
+    display: none;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-section {
+    height: 200px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    font-weight: 900;
+    padding-left: 5px;
+  }
+
+  .hero-btn {
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 5px 8px;
+    border-radius: 4px;
+  }
+}
 /* ---------------------------------- Brands CSS ---------------------------------- */
 
-
-
 .brand-section {
-  background-color: #E6C744;
+  background-color: #e6c744;
   margin: 50px 0px;
   width: 100%;
-  height: 130px;
+  height: 100px;
+  overflow-x: hidden;
 }
 
 .brand-parent {
@@ -139,6 +298,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .brand-parent > .brand-logos {
@@ -147,9 +308,17 @@ a {
 }
 
 
+@media screen and (max-width: 840px) {
+  .brand-section {
+    height: 70px;
+    margin: 25px 0px;
+  }
+}
+
+
 /* ---------------------------------- New Arrivals CSS ---------------------------------- */
 
-.new-arrival-heading {
+.section-header {
   font-size: 32px;
   font-weight: 900;
 }
@@ -157,7 +326,10 @@ a {
 .new-arrival-cards-parent {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 50px;  
+  gap: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .new-arrival-card {
@@ -181,12 +353,46 @@ a {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1080px) {
+  .new-arrival-card > img {
+    width: 300px;
+  }
+
+  .new-arrival-cards-parent {
+    margin-top: 30px;
+  }
+
+  .section-header {
+    font-size: 24px;
+  }
+
+  .arrival-card-description-name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .new-arrival-card > img {
+    width: 250px;
+  }
+  .new-arrival-cards-parent {
+    margin-top: 15px;
+  }
+
+  .section-header {
+    font-size: 20px;
+  }
+  .arrival-card-description-name {
+    font-size: 16px;
+  }
+}
+
 /* ---------------------------------- PayDay CSS ---------------------------------- */
 
 .payday-section {
   margin: 150px 0px;
   height: 768px;
-  background-color: #EFD24B;
+  background-color: #efd24b;
   display: flex;
   justify-content: space-around;
   align-items: end;
@@ -200,7 +406,7 @@ a {
   display: flex;
   height: 100%;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -215,7 +421,6 @@ a {
 .payday-description-title {
   padding-left: 10px;
 }
-
 
 .payday-description-background {
   background-color: white;
@@ -246,17 +451,19 @@ a {
 .youngs-favourite-card {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
 .youngs-favourite-card-parent {
   margin: 50px 0px;
   display: flex;
   justify-content: space-between;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .youngs-favourite-image {
-  min-width: 80%;  
+  min-width: 80%;
 }
 
 .youngs-favourite-card-content {
@@ -293,14 +500,13 @@ a {
 
 .download-section-description {
   font-size: 18px;
-
 }
 
 /* ---------------------------------- Community CSS ---------------------------------- */
 
 .community-section {
   margin: 100px 0px 0px 0px;
-  background-color: #E5C643;
+  background-color: #e5c643;
   height: 560px;
   display: flex;
   flex-direction: column;
@@ -320,7 +526,7 @@ a {
 }
 
 .community-input-parent {
-  position: relative;       
+  position: relative;
 }
 
 .community-section-email-input {
@@ -350,14 +556,14 @@ a {
 
 footer {
   background-color: #000;
-  color: #C2C8DA;
+  color: #c2c8da;
   display: flex;
   height: 545px;
 }
 
 .footer-social-media {
   flex: 40%;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 100px;
@@ -365,7 +571,7 @@ footer {
 }
 
 .footer-title {
-  color:white;
+  color: white;
   font-size: 44px;
   font-weight: 900;
 }
@@ -395,7 +601,7 @@ footer {
 }
 
 .footer-links-title {
-  color:white;
+  color: white;
 }
 
 .footer-links-child > ul {

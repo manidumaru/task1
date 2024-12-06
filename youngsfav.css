@@ -1,0 +1,23 @@
+.youngs-favourite-card {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.youngs-favourite-card-parent {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.youngs-favourite-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.youngs-favourite-card-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

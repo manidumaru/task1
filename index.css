@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 540px) {
   .margined-section {
-    margin: 7px 20px;
+    margin: 7px 15px;
   }
 }
 
@@ -126,7 +126,10 @@ a {
 
 @media screen and (max-width: 540px) {
   nav {
-    margin: 7px 45px;
+    height: 96px;
+    margin: 0px 0px 16px 0px;
+    padding: 0px 15px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04), 0 2px 8px 0 rgba(0, 0, 0, 0.03);
   }
 }
 
@@ -222,6 +225,7 @@ a {
     font-size: 40px;
     font-weight: 900;
     padding-left: 7px;
+    width: 100%;
   }
 
   .hero-description {
@@ -266,20 +270,30 @@ a {
 
 @media screen and (max-width: 640px) {
   .hero-section {
-    height: 200px;
+    height: 170px;
+    border-radius: 24px;
+  }
+
+  .hero-image > img {
+    height: 90%;
   }
 
   .hero-text {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 900;
-    padding-left: 5px;
+    padding-left: 1px;
+    padding-right: 7px;
   }
 
   .hero-btn {
     font-size: 10px;
     margin-top: 10px;
-    padding: 5px 8px;
+    padding: 8px 10px;
     border-radius: 4px;
+  }
+
+  .hero-description {
+    padding-left: 0px;
   }
 }
 /* ---------------------------------- Brands CSS ---------------------------------- */
@@ -309,7 +323,7 @@ a {
 
 @media screen and (max-width: 840px) {
   .brand-section {
-    height: 70px;
+    height: 60px;
     margin: 25px 0px;
   }
 }
@@ -392,7 +406,7 @@ a {
   height: 768px;
   background-color: #efd24b;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: end;
 }
 
@@ -414,6 +428,7 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
+  width: fit-content;
 }
 
 .payday-description-title {
@@ -518,8 +533,13 @@ a {
 
 @media screen and (max-width: 500px) {
   .payday-section {
-    height: 300px;
+    height: 200px;
     margin: 30px 0px;
+    justify-content: center;
+  }
+
+  .payday-image {
+    height: 90%;
   }
 
   .payday-description-header {
@@ -534,6 +554,33 @@ a {
     width: 50%;
     padding: 4px 7px;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .payday-section {
+    height: 190px;
+    margin: 30px 0px;
+  }
+
+  .payday-description-header {
+    font-size: 20px;
+  }
+
+  .payday-description-title {
+    padding-left: 1px;
+  }
+
+  .payday-description-info {
+    font-size: 9px;
+    font-weight: 500;
+  }
+
+  .payday-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 12px;
+    width: fit-content;
   }
 }
 
@@ -557,6 +604,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 
 .youngs-favourite-card-content-text {
@@ -572,6 +620,15 @@ a {
 
   .youngs-favourite-image {
     width: 600px;
+    border-radius: 20px;
+  }
+
+  .youngs-favourite-card-content-text {
+    font-size: 16px;
+  }
+
+  .favourite-card-content-text-title {
+    font-weight: 500;
   }
 }
 
@@ -583,6 +640,14 @@ a {
   .youngs-favourite-image {
     width: 310px;
   }
+
+  .youngs-favourite-card-content-text {
+    font-size: 12px;
+  }
+
+  .right-arrow-img {
+    scale: 0.7;
+  }
 }
 
 /* ---------------------------------- Download CSS ---------------------------------- */
@@ -592,7 +657,7 @@ a {
   justify-content: space-around;
   align-items: center;
   height: 768px;
-  margin: 50px 0px;  
+  margin: 50px 0px;
 }
 
 .download-section-content {
@@ -626,16 +691,61 @@ a {
 }
 
 @media screen and (max-width: 840px) {
+  .download-section-content {
+    gap: 20px;
+  }
+  .download-section-title {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+  }
+
+  .download-section-description {
+    font-size: 14px;
+  }
   .download-section {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    height: 300px;
   }
   .download-section-content {
-    align-items: end;       
+    align-items: end;
   }
   .download-section-image > img {
     display: none;
+  }
+
+  .download-section-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-section-buttons > img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .download-section {
+    height: 270px;
+  }
+  .download-section-title {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+  }
+
+  .download-section-description {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .download-section-buttons {
+    gap: 10px;
   }
 }
 
@@ -704,10 +814,10 @@ a {
     font-size: 18px;
   }
 
-  .community-section-email-input {    
+  .community-section-email-input {
     height: 40px;
     width: 450px;
-    padding: 0px 15px;    
+    padding: 0px 15px;
     font-size: 18px;
   }
 
@@ -722,8 +832,8 @@ a {
 
 @media screen and (max-width: 640px) {
   .community-section {
-    height: 350px;
-    gap: 8px;
+    height: 300px;
+    gap: 5px;
     margin: 30px 0px 0px 0px;
   }
 
@@ -735,10 +845,10 @@ a {
     font-size: 14px;
   }
 
-  .community-section-email-input {    
+  .community-section-email-input {
     height: 30px;
-    width: 450px;
-    padding: 0px 10px;    
+    width: 300px;
+    padding: 0px 10px;
     font-size: 14px;
     margin-top: 30px;
   }
@@ -752,19 +862,52 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .community-section {
+    height: 250px;
+    gap: 5px;
+    margin: 30px 0px 0px 0px;
+  }
+
+  .community-section-title {
+    font-size: 20px;
+  }
+
+  .community-section-description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .community-section-email-input {
+    height: 40px;
+    width: 330px;
+    padding: 0px 10px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .community-input-btn {
+    right: 4px;
+    top: 33px;
+    height: 34px;
+    width: 60px;
+    font-size: 12px;
+  }
+}
+
 /* ---------------------------------- Footer CSS ---------------------------------- */
 
 footer {
   background-color: #000;
   color: #c2c8da;
-  display: flex; 
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 545px;
 }
 
-.footer-social-media {  
+.footer-social-media {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -789,7 +932,7 @@ footer {
 }
 
 .footer-links {
-  display: flex;  
+  display: flex;
   font-size: 20px;
 }
 

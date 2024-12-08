@@ -26,6 +26,27 @@
 
   <body>
     <!-- Navigation Bar -->
+
+    <div class="responsive-nav">
+      <div class="responsive-nav-bar">
+        <div class="responsive-nav-logo">
+          <img src="./assets/icon.png" />
+          <h1 class="responsive-nav-logo-title">FASHION</h1>
+        </div>
+        <img src="./assets/cross.png" class="cross-icon" />
+      </div>
+
+      <ul class="responsive-nav-links-list">
+        <li>CATALOGUE</li>
+        <li>FASHION</li>
+        <li>FAVOURITE</li>
+        <li>LIFESTYLE</li>
+      </ul>
+
+      <div class="responsive-nav-button"><button>Sign Up</button></div>
+    </div>
+
+
     <nav>
       <div class="logo">
         <img src="./assets/icon.png"></img>
@@ -46,6 +67,7 @@
 
 
     <!-- Hero Section -->
+     <main>
     <section>
         <div class="hero-section margined-section">
             <div class="hero-description">
@@ -141,7 +163,7 @@
 
          <!-- Youngs Favourite Section -->
         <section class="margined-section youngs-favourite">
-          <h2 class="section-header">YOUNG'S FAVOURITE</h2>
+          <h2 class="section-header">Young's Favourite</h2>
           <div class="youngs-favourite-card-parent">
             <div class="youngs-favourite-card">
               <img src="./assets/youngs_favourite1.png" class="youngs-favourite-image"/>
@@ -199,6 +221,7 @@
             </div>
             </section>
             <!-- Community Section Section -->
+             </main>
 
             <!-- Footer Section -->
             <footer>
@@ -241,5 +264,19 @@
               </div>
             </footer>
             <!-- Footer Section -->
+
+            <script>
+              let breadcrumb = document.querySelector(".nav-breadcrumb")
+              let responsiveNavbar = document.querySelector(".responsive-nav")
+              let crossIcon = document.querySelector(".cross-icon") 
+
+              breadcrumb.addEventListener('click', () => {
+                responsiveNavbar.style.display = 'block'
+              })
+
+              crossIcon.addEventListener('click', () => {
+                responsiveNavbar.style.display = 'none'
+              })
+            </script>
   </body>
 </html>

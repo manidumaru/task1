@@ -395,7 +395,12 @@ a {
     font-size: 20px;
   }
   .arrival-card-description-name {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .explore-now {
+    font-size: 12px;
   }
 }
 
@@ -642,7 +647,8 @@ a {
   }
 
   .youngs-favourite-card-content-text {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 500;
   }
 
   .right-arrow-img {
@@ -880,7 +886,7 @@ a {
 
   .community-section-email-input {
     height: 40px;
-    width: 300px;
+    width: 320px;
     padding: 0px 10px;
     font-size: 14px;
     margin-top: 30px;
@@ -892,6 +898,10 @@ a {
     height: 34px;
     width: 60px;
     font-size: 12px;
+  }
+
+  .dynamic-casing {
+    text-transform: lowercase;
   }
 }
 
@@ -1036,7 +1046,11 @@ footer {
   }
 
   .footer-sub-description {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .links-title {
+    font-size: 16px;
   }
 
   .footer-links {
@@ -1044,10 +1058,14 @@ footer {
   }
 
   .main-section-image-container > img {
-    width: 52px;
+    width: 48px;
   }
 
   .footer-lists {
     gap: 10px;
+  }
+  
+  .responsive-line-break {
+    display: none;
   }
 }

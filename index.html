@@ -68,7 +68,7 @@
 
     <!-- Hero Section -->
      <main>
-    <section>
+    <section class="hero-parent">
         <div class="hero-section margined-section">
             <div class="hero-description">
                 <span class="hero-text hero-text-background">LET'S</span>
@@ -101,7 +101,7 @@
      <!-- Brand Section -->
 
      <!-- New Arrivals Section -->
-        <section class="new-arrival-section margined-section">
+        <section class="new-arrival-section ">
             <h2 class="section-header">NEW ARRIVALS</h2>
             <div class="new-arrival-cards-parent">
               <div class="new-arrival-card">
@@ -162,7 +162,7 @@
         <!-- Pay Day Sale Section -->
 
          <!-- Youngs Favourite Section -->
-        <section class="margined-section youngs-favourite">
+        <section class="youngs-favourite">
           <h2 class="section-header">Young's Favourite</h2>
           <div class="youngs-favourite-card-parent">
             <div class="youngs-favourite-card">
@@ -269,13 +269,16 @@
               let breadcrumb = document.querySelector(".nav-breadcrumb")
               let responsiveNavbar = document.querySelector(".responsive-nav")
               let crossIcon = document.querySelector(".cross-icon") 
+              const body = document.body
 
               breadcrumb.addEventListener('click', () => {
-                responsiveNavbar.style.display = 'block'
+                responsiveNavbar.style.display = 'block';
+                body.style.overflow = 'hidden'
               })
 
               crossIcon.addEventListener('click', () => {
                 responsiveNavbar.style.display = 'none'
+                body.style.overflow = 'scroll'
               })
             </script>
   </body>

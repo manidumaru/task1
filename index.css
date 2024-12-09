@@ -103,6 +103,14 @@ nav {
   margin: 20px 100px;
 }
 
+@media screen and (min-width: 2100px) {
+  nav {
+    width: 100svw;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -169,7 +177,10 @@ a {
 
 @media screen and (max-width: 860px) {
   nav {
-    margin: 10px 50px;
+    height: 96px;
+    margin: 0px 0px 16px 0px;
+    padding: 0px 15px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04), 0 2px 8px 0 rgba(0, 0, 0, 0.03);
   }
 
   .logo {
@@ -194,15 +205,6 @@ a {
   }
 }
 
-@media screen and (max-width: 540px) {
-  nav {
-    height: 96px;
-    margin: 0px 0px 16px 0px;
-    padding: 0px 15px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04), 0 2px 8px 0 rgba(0, 0, 0, 0.03);
-  }
-}
-
 /* ---------------------------------- Hero CSS ---------------------------------- */
 
 .hero-section {
@@ -211,6 +213,20 @@ a {
   background-color: #f4f6f5;
   border-radius: 60px;
   height: 784px;
+}
+
+@media screen and (min-width: 2100px) {
+  .hero-section {
+    justify-content: center;
+    gap: 200px;
+    padding: 0px 50px;
+    max-width: 2000px;
+  }
+
+  .hero-parent {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero-description {
@@ -386,6 +402,13 @@ a {
   scrollbar-width: none;
 }
 
+@media screen and (min-width: 2100px) {
+  .brand-parent {
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
 .brand-parent > .brand-logos {
   height: 50%;
   mix-blend-mode: multiply;
@@ -404,15 +427,31 @@ a {
 .section-header {
   font-size: 32px;
   font-weight: 900;
+  margin-left: 100px;
+}
+
+@media screen and (min-width: 2100px) {
+  .section-header {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .new-arrival-cards-parent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
   margin-top: 50px;
   gap: 20px;
   overflow-x: scroll;
   scrollbar-width: none;
+}
+
+.new-arrival-card:nth-child(1) {
+  margin-left: 100px;
+}
+
+.new-arrival-card:nth-child(3) {
+  margin-right: 100px;
 }
 
 .new-arrival-card {
@@ -436,6 +475,12 @@ a {
   font-weight: 600;
 }
 
+@media screen and (min-width: 2100px) {
+  .new-arrival-cards-parent {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .new-arrival-card > img {
     width: 300px;
@@ -454,6 +499,32 @@ a {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .new-arrival-card:nth-child(1) {
+    margin-left: 50px;
+  }
+  
+  .new-arrival-card:nth-child(3) {
+    margin-right: 50px;
+  }
+
+  .section-header {    
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .new-arrival-card:nth-child(1) {
+    margin-left: 20px;
+  }
+  .new-arrival-card:nth-child(3) {
+    margin-right: 20px;
+  }
+  .section-header {
+    margin-left: 20px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .new-arrival-card > img {
     width: 250px;
@@ -462,9 +533,6 @@ a {
     margin-top: 15px;
   }
 
-  .section-header {
-    font-size: 20px;
-  }
   .arrival-card-description-name {
     font-size: 14px;
     font-weight: 500;
@@ -533,6 +601,12 @@ a {
   padding: 20px 30px;
   font-size: 16px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 2100px) {
+  .payday-section {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -667,6 +741,34 @@ a {
   flex-direction: column;
 }
 
+.youngs-favourite-card:nth-child(1) {
+  margin-left: 100px;
+}
+
+.youngs-favourite-card:nth-child(2) {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 860px) {
+  .youngs-favourite-card:nth-child(1) {
+    margin-left: 50px;
+  }
+  
+  .youngs-favourite-card:nth-child(2) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .youngs-favourite-card:nth-child(1) {
+    margin-left: 20px;
+  }
+  
+  .youngs-favourite-card:nth-child(2) {
+    margin-right: 20px;
+  }
+}
+
 .youngs-favourite-card-parent {
   margin: 50px 0px;
   display: flex;
@@ -674,6 +776,12 @@ a {
   gap: 20px;
   overflow-x: scroll;
   scrollbar-width: none;
+}
+
+@media screen and (min-width: 2100px) {
+  .youngs-favourite-card-parent {
+    justify-content: center;
+  }
 }
 
 .youngs-favourite-card-content {
@@ -735,6 +843,13 @@ a {
   align-items: center;
   height: 768px;
   margin: 50px 0px;
+}
+
+@media screen and (min-width: 2100px) {
+  .download-section {
+    justify-content: center;
+    gap: 500px;
+  }
 }
 
 .download-section-content {
@@ -987,6 +1102,17 @@ footer {
 .footer-content-container {
   display: flex;
   height: 100%;
+}
+
+@media screen and (min-width: 2100px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content-container {
+    min-width: 2000px;
+  }
 }
 
 .footer-main-section {

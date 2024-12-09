@@ -439,7 +439,7 @@ a {
 
 .new-arrival-cards-parent {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   margin-top: 50px;
   gap: 20px;
   overflow-x: scroll;
@@ -503,12 +503,12 @@ a {
   .new-arrival-card:nth-child(1) {
     margin-left: 50px;
   }
-  
+
   .new-arrival-card:nth-child(3) {
     margin-right: 50px;
   }
 
-  .section-header {    
+  .section-header {
     margin-left: 50px;
   }
 }
@@ -753,7 +753,7 @@ a {
   .youngs-favourite-card:nth-child(1) {
     margin-left: 50px;
   }
-  
+
   .youngs-favourite-card:nth-child(2) {
     margin-right: 50px;
   }
@@ -763,7 +763,7 @@ a {
   .youngs-favourite-card:nth-child(1) {
     margin-left: 20px;
   }
-  
+
   .youngs-favourite-card:nth-child(2) {
     margin-right: 20px;
   }
@@ -875,6 +875,12 @@ a {
 @media screen and (max-width: 1100px) {
   .download-section {
     height: 500px;
+  }
+
+  .download-section-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .download-section-image > img {
@@ -1096,12 +1102,28 @@ a {
 footer {
   background-color: #000;
   color: #c2c8da;
-  height: 545px;
+  height: fit-content;
 }
 
 .footer-content-container {
   display: flex;
   height: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.icon-image-container {
+  background-color: #e6c744;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-image-container > img {
+  scale: 0.7;
 }
 
 @media screen and (min-width: 2100px) {
@@ -1121,11 +1143,9 @@ footer {
   gap: 32px;
   flex: 40%;
   padding-left: 100px;
-  padding-top: 120px;
 }
 
 .footer-sub-section {
-  padding-top: 120px;
   flex: 20%;
 }
 
@@ -1188,6 +1208,9 @@ footer {
 
   .footer-content-container {
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    height: fit-content;
   }
 
   .footer-main-section {
@@ -1211,20 +1234,13 @@ footer {
     font-size: 24px;
   }
 
-  .main-section-image-container > img {
-    width: 82px;
+  .icon-image-container {
+    height: 40px;
+    width: 40px;
   }
 }
 
 @media screen and (max-width: 640px) {
-  footer {
-    height: fit-content;
-  }
-
-  .footer-content-container {
-    flex-direction: column;
-  }
-
   .footer-main-section {
     padding: 25px 32px 20px 20px;
     gap: 15px;

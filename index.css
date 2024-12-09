@@ -30,6 +30,15 @@ body {
 
 /* ---------------------------------- Responsive Navigation CSS ---------------------------------- */
 
+@keyframes example {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100svh;
+  }
+}
+
 .responsive-nav {
   height: 100svh;
   width: 100svw;
@@ -37,6 +46,8 @@ body {
   position: absolute;
   background-color: white;
   display: none;
+  animation-name: example;
+  animation-duration: 500ms;
 }
 
 .responsive-nav-bar {
@@ -211,7 +222,7 @@ a {
 .hero-section {
   display: flex;
   justify-content: space-evenly;
-  background-color: #f4f6f5;
+  background-color: #f4f6f5;    
   border-radius: 60px;
   height: 784px;
 }
@@ -263,6 +274,10 @@ a {
   transform: skewY(-2deg);
 }
 
+.opposite-rotate-text {
+  transform: skewY(2deg);
+}
+
 .hero-tagline {
   font-size: 25px;
   margin: 20px 0px;
@@ -279,7 +294,7 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   .hero-section {
     height: 500px;
   }

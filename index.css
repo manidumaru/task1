@@ -245,7 +245,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0px;
+  gap: 0px;   
 }
 
 .hero-image {
@@ -261,17 +261,21 @@ a {
   font-size: 96px;
   line-height: 1.2;
   font-weight: 900;
-  padding-left: 15px;
+  padding-left: 15px;  
 }
 
 .hero-text-background {
   background-color: white;
   transform: skewY(-2deg);
+  min-width: 80%;
+  max-width: 80%;
 }
 
 .hero-text-background-yellow {
   background-color: #e6c744;
-  transform: skewY(-2deg);
+  transform: skewY(-2deg); 
+  min-width: 80%;   
+  max-width: 80%;
 }
 
 .opposite-rotate-text {
@@ -1258,8 +1262,8 @@ footer {
   }
 
   .icon-image-container {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
   }
 }
 
@@ -1291,10 +1295,6 @@ footer {
 
   .footer-links {
     font-size: 14px;
-  }
-
-  .main-section-image-container > img {
-    width: 48px;
   }
 
   .footer-lists {

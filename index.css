@@ -108,6 +108,7 @@ nav {
     width: 100svw;
     justify-content: center;
     margin: 20px 0px;
+    gap: 655px
   }
 }
 
@@ -432,8 +433,15 @@ a {
 
 @media screen and (min-width: 2100px) {
   .section-header {
-    display: flex;
     justify-content: center;
+    display: flex; 
+    gap: 1360px;   
+  }
+
+  .section-header-favourite {
+    justify-content: center;
+    display: flex; 
+    gap: 1470px; 
   }
 }
 
@@ -456,7 +464,7 @@ a {
 
 .new-arrival-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .new-arrival-card > img {
